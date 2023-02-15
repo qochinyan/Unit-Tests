@@ -14,4 +14,6 @@ describe("Math Functions", () => {
     expect(getRoot(-100)).not.toEqual(10);
     expect(getRoot(-100)).toBeNaN();
   });
+  // func mock
+  
 });
