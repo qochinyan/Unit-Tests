@@ -8,4 +8,4 @@ function getAsyncData(ms) {
     else rej(new Error("Unknown Time"));
   });
 }
-module.exports = {getAsyncData};
+module.exports = getAsyncData;
