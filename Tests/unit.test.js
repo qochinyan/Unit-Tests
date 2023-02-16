@@ -8,6 +8,15 @@ describe("Math Functions", () => {
     expect(getSquare(-5)).not.toEqual(-25);
     expect(getSquare(-11111)).toBeGreaterThan(0);
   });
+  test("Square Function mocking",()=>{
+    const pow = jest.spyOn(Math,"pow")
+    getSquare(1)
+    expect(pow).toBeCalledTimes(0)
+    getSquare(10)
+    expect(pow).toBeCalledTimes(1)
+
+    jest.clearAllMocks()
+  })
   test("Root", () => {
     expect(getRoot(4)).toEqual(2);
     expect(getRoot(16)).toEqual(4);

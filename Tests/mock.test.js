@@ -1,6 +1,6 @@
 const { testFunc } = require("../Functions/mock");
 
-describe("Using Mock Test", () => {
+describe("Manual Mock Test", () => {
   let fn;
   beforeEach(() => {
     fn = jest.fn((x) => x + x);
